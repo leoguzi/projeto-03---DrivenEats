@@ -14,26 +14,132 @@
     </div>
     <div class="container">
       <h1 class="titulo-lista">Primeiro, seu prato</h1>
-      <ul>
-        <l1></l1>
-        <l1></l1>
-        <l1></l1>
-        <l1></l1>
-      </ul>
-      <ul>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-      </ul>
-      <ul>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
+      <ul class="lista comidas">
+        <li class="comidas" onclick="Selecionar(this, 'comidas')">
+          <img src="assets/hamburguer.jpg" alt="Hamburguer" />
+          <h1>Hamburger</h1>
+          <h2>Hamburguer com vários ingredientes de hamburguer</h2>
+          <h3>R$ <spam class="valor">14,90</spam></h3>
+          <ion-icon name="checkmark-circle" class="botao-selecao"></ion-icon>
+        </li>
+        <li class="comidas" onclick="Selecionar(this, 'comidas')">
+          <img src="assets/pizza.jpg" alt="Pizza" />
+          <h1>Pizza</h1>
+          <h2>Pizza com vários ingredientes de pizza!</h2>
+          <h3>R$ <spam class="valor">13,90</spam></h3>
+          <ion-icon name="checkmark-circle" class="botao-selecao"></ion-icon>
+        </li>
+        <li class="comidas" onclick="Selecionar(this, 'comidas')">
+          <img src="assets/poke.jpg" alt="Poke" />
+          <h1>Poke</h1>
+          <h2>Poke com vários ingredientes de poke!</h2>
+          <h3>R$ <spam class="valor">21,90</spam></h3>
+          <ion-icon name="checkmark-circle" class="botao-selecao"></ion-icon>
+        </li>
+        <li class="comidas" onclick="Selecionar(this, 'comidas')">
+          <img src="assets/macarronada.jpeg" alt="Macarronada" />
+          <h1>Macarronada</h1>
+          <h2>Macarronada que na verdade é espaguete...</h2>
+          <h3>R$ <spam class="valor">10,90</spam></h3>
+          <ion-icon name="checkmark-circle" class="botao-selecao"></ion-icon>
+        </li>
       </ul>
       <h1 class="titulo-lista">Agora, sua bebida</h1>
+      <ul class="lista bebidas">
+        <li class="bebidas" onclick="Selecionar(this, 'bebidas')">
+          <img src="assets/caipirinha.jpeg" alt="Caipirinha" />
+          <h1>Caipirinha</h1>
+          <h2>
+            Classica de limão. Para fazer seu trabalho depois do almoço render
+            ;)
+          </h2>
+          <h3>R$ <spam class="valor">8,90</spam></h3>
+          <ion-icon name="checkmark-circle" class="botao-selecao"></ion-icon>
+        </li>
+        <li class="bebidas" onclick="Selecionar(this, 'bebidas')">
+          <img src="assets/coca.jpg" alt="Coca-Cola" />
+          <h1>CocaCola</h1>
+          <h2>Seu pancreas fica triste, mas você fica feliz :D</h2>
+          <h3>R$ <spam class="valor">4,90</spam></h3>
+          <ion-icon
+            name="checkmark-circle"
+            class="botao-selecao escondido"
+          ></ion-icon>
+        </li>
+        <li class="bebidas" onclick="Selecionar(this, 'bebidas')">
+          <img src="assets/suco.jpg" alt="Suco" />
+          <h1>Suco de Laranja</h1>
+          <h2>Vitamina C pra dar aquele Up na imunidade. Xô Covid!</h2>
+          <h3>R$ <spam class="valor">9,80</spam></h3>
+          <ion-icon
+            name="checkmark-circle"
+            class="botao-selecao escondido"
+          ></ion-icon>
+        </li>
+        <li class="bebidas" onclick="Selecionar(this, 'bebidas')">
+          <img src="assets/lokal.jpeg" alt="Cerveja" />
+          <h1>Cerveja Lokal</h1>
+          <h2>Ingrediente principal: água do rio (sem tratamento).</h2>
+          <h3>R$ <spam class="valor">5,90</spam></h3>
+          <ion-icon
+            name="checkmark-circle"
+            class="botao-selecao escondido"
+          ></ion-icon>
+        </li>
+      </ul>
+
       <h1 class="titulo-lista">Por fim, sua sobremesa</h1>
+      <ul class="lista sobremesas">
+        <li class="sobremesas" onclick="Selecionar(this, 'sobremesas')">
+          <img src="assets/cheesecake.jpeg" alt="Cheesecake" />
+          <h1>Cheesecake</h1>
+          <h2>Torta de requeijão para os decolonizados :D</h2>
+          <h3>R$ <spam class="valor">7,99</spam></h3>
+          <ion-icon
+            name="checkmark-circle"
+            class="botao-selecao escondido"
+          ></ion-icon>
+        </li>
+        <li class="sobremesas" onclick="Selecionar(this, 'sobremesas')">
+          <img src="assets/brownie.jpg" alt="Brownie" />
+          <h1>Brownie</h1>
+          <h2>Porque o bom e velho bolo de chocolate ficou obsoleto :/</h2>
+          <h3>R$ <spam class="valor">10,00</spam></h3>
+          <ion-icon
+            name="checkmark-circle"
+            class="botao-selecao escondido"
+          ></ion-icon>
+        </li>
+        <li class="sobremesas" onclick="Selecionar(this, 'sobremesas')">
+          <img src="assets/pudim.jpg" alt="Pudim" />
+          <h1>Pudim</h1>
+          <h2>É aquela história né: quer moleza, senta em um pudim.</h2>
+          <h3>R$ <spam class="valor">7,50</spam></h3>
+          <ion-icon
+            name="checkmark-circle"
+            class="botao-selecao escondido"
+          ></ion-icon>
+        </li>
+        <li class="sobremesas" onclick="Selecionar(this, 'sobremesas')">
+          <img src="assets/sorvete.jpeg" alt="Sorvete" />
+          <h1>Sorvete</h1>
+          <h2>
+            Vai derreter até chegar até você? Sim, mas sai daqui congeladinho ;)
+          </h2>
+          <h3>R$ <spam class="valor">11,90</spam></h3>
+          <ion-icon
+            name="checkmark-circle"
+            class="botao-selecao escondido"
+          ></ion-icon>
+        </li>
+      </ul>
     </div>
+    <div class="rodape">
+      <div class="botao-fechar-pedido" onclick="ConfirmaPedido()">
+        <spam>Selecione os tres itens <br />para fechar o pedido</spam>
+      </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
   </body>
 </html>

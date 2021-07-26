@@ -12,8 +12,10 @@
       <h1>DrivenEats</h1>
       <h2>Sua comida em 6 minutos</h2>
     </div>
-    <div class="container">
+    <!--Fim barra superior-->
+    <div class="container-conteudo">
       <h1 class="titulo-lista">Primeiro, seu prato</h1>
+      <!--Lista de comidas-->
       <ul class="lista comidas">
         <li class="comidas" onclick="Selecionar(this, 'comidas')">
           <img src="assets/hamburguer.jpg" alt="Hamburguer" />
@@ -44,6 +46,7 @@
           <ion-icon name="checkmark-circle" class="botao-selecao"></ion-icon>
         </li>
       </ul>
+      <!--Lista de bebidas-->
       <h1 class="titulo-lista">Agora, sua bebida</h1>
       <ul class="lista bebidas">
         <li class="bebidas" onclick="Selecionar(this, 'bebidas')">
@@ -87,7 +90,7 @@
           ></ion-icon>
         </li>
       </ul>
-
+      <!--Lista de sobremesas-->
       <h1 class="titulo-lista">Por fim, sua sobremesa</h1>
       <ul class="lista sobremesas">
         <li class="sobremesas" onclick="Selecionar(this, 'sobremesas')">
@@ -134,10 +137,32 @@
         </li>
       </ul>
     </div>
+    <!--Rodape-->
     <div class="rodape">
-      <div class="botao-fechar-pedido" onclick="ConfirmaPedido()">
+      <div class="botao fechar-pedido" onclick="AbrePopUp()">
         <spam>Selecione os tres itens <br />para fechar o pedido</spam>
       </div>
+    </div>
+    <!--divs ocultas, são mostradas no momento da confirmação-->
+    <div class="tela-cinza escondido"></div>
+    <div class="pop-up-confirmacao escondido">
+      <h1>Confirme seu pedido</h1>
+      <div class="confirmacao comidas">
+        <spam class="item"></spam><spam class="preco"></spam>
+      </div>
+      <div class="confirmacao bebidas">
+        <spam class="item"></spam><spam class="preco"></spam>
+      </div>
+      <div class="confirmacao sobremesas">
+        <spam class="item"></spam><spam class="preco"></spam>
+      </div>
+      <div class="confirmacao preco-total">
+        <spam class="item">Total</spam><spam class="preco"></spam>
+      </div>
+      <div class="botao confirmar-pedido" onclick="ConfirmaPedido()">
+        <spam>Tudo certo, pode pedir!</spam>
+      </div>
+      <spam class="cancelar" onclick="FechaPopUp()">Cancelar</spam>
     </div>
     <script src="script.js"></script>
     <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>

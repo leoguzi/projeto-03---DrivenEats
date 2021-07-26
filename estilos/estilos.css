@@ -1,11 +1,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:wght@400;700&display=swap");
-/*font-family: 'Righteous', cursive;*/
 * {
   box-sizing: border-box;
 }
 body {
   font-family: "Roboto", sans-serif;
   background-color: #e5e5e5;
+}
+
+.tela-cinza {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  background-color: rgba(255, 255, 255, 0.9);
 }
 
 .barra-superior {
@@ -35,7 +44,7 @@ body {
   margin-left: 20px;
 }
 
-.container {
+.container-conteudo {
   margin: 110px 20px 110px 20px;
 }
 
@@ -120,10 +129,13 @@ body {
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.25);
 }
 
-.botao-fechar-pedido {
+.botao {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.fechar-pedido {
   height: 61px;
   width: 364px;
   margin: 0 20px 0 20px;
@@ -133,6 +145,65 @@ body {
   text-align: center;
   font-size: 20px;
 }
+
 .botao-ativado {
   background-color: #32b72f;
+}
+
+.pop-up-confirmacao {
+  width: auto;
+  height: 353px;
+  display: flex;
+  flex-direction: column;
+  background-color: #50d074;
+  border-radius: 9px;
+  position: fixed;
+  left: 4%;
+  right: 4%;
+  top: 20vh;
+  z-index: 1;
+  color: #ffffff;
+  box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.25);
+}
+
+.pop-up-confirmacao h1 {
+  font-size: 22px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.confirmacao {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 20px 20px 20px;
+  font-size: 22px;
+}
+
+.preco-total {
+  font-weight: bold;
+}
+
+.confirmar-pedido {
+  display: flex;
+  width: 333px;
+  height: 52px;
+  color: #50d074;
+  background-color: #ffffff;
+  border-radius: 100px;
+  font-size: 22px;
+  font-weight: bold;
+  align-self: center;
+}
+
+.cancelar {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.escondido {
+  display: none;
 }
